@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en" ng-app="appModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CreativoMusano</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href="css/siteStyle.css" rel="stylesheet" />
+    <!-- unique icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- The main Angular 2 Links via Angular CDN angularjs.org -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
+    <!-- angular-youtube-embed - https://github.com/brandly/angular-youtube-embed -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/angular-youtube-embed.js"></script>
+    <script src="js/appModule.js"></script>
+    <script src="js/homepageModule.js"></script>
+    <script src="js/loginModule.js"></script>
+    <script src="js/registerModule.js"></script>
+    <script src="js/profileModule.js"></script>
+    <script src="js/editModule.js"></script>
+    <script src="js/playModule.js"></script>
+    <script src="js/site.js"></script>
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div ng-page-rights class="navbar-sticky-bottom footer"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

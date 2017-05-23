@@ -1,0 +1,11 @@
+﻿(function () {
+
+    "use strict";
+
+    $(function () {
+
+    });
+
+
+
+})();

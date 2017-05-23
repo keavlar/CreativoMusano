@@ -1,0 +1,114 @@
+﻿* {
+    font-family: Garamond, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* CSS for navbar */
+.navbarBrand {
+    position: relative;
+    width: 170px;
+    left: 15px;
+    bottom: 10px;
+    max-height: 70px;
+}
+
+/* CSS for homepage */
+
+.welcomeNote, .welcomeText {
+    text-align: center;
+}
+
+.featureList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #ecf0f1;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.aSignUp {
+    color: #ff5050;
+}
+
+    .aSignUp:hover {
+        color: #ecf0f1;
+    }
+
+.ulMainPage {
+    list-style: none;
+    color: black;
+}
+
+.mainLogo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Register Page*/
+.registerOK {
+    color: green;
+    font-size: 20px;
+}
+
+/*CSS for login page */
+
+.errorWarningLogin {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.loginOK {
+    color: green;
+    font-size: 20px;
+}
+
+/* CSS for the profile page */
+
+th {
+    text-align: center;
+}
+
+th, td {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.youtubeUrlValid {
+    color: red;
+    font-size: 18px;
+}
+
+/*EDIT PAGE*/
+.updatedTrue {
+    color: green;
+    font-size: 18px;
+}
+
+/*Play PAGE*/
+.playPage {
+    text-align: center;
+}
+
+/* CSS for footer */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.container {
+    background-image: url('../images/playlist11.jpg');
+    background-size: 1155px 600px;
+    background-repeat: repeat;
+    color: aqua;
+}

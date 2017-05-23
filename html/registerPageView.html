@@ -1,0 +1,38 @@
+﻿<div ng-include="'html/navbar.html'" id="navbar"></div>
+
+<div class="container" align="center">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Register an account</h2>
+
+            <h4>Already a member?<a href=".#!/login"> Login Here</a></h4>
+
+            <br />
+
+            <form>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-body"></span>
+                    <label for="registerName">Enter your first name</label>
+                    <input type="text" class="form-control" id="registerName" placeholder="enter your first name" ng-model="registerName" required>
+
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <label for="registerEmail">Enter an email address</label>
+                    <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp" placeholder="enter your email" ng-model="registerEmail" required>
+
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <label for="registerPassword">Enter a password</label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="enter a password" ng-model="registerPassword" required>
+                </div>
+                <button type="submit" class="btn btn-danger" ng-click="register()" value="register">Register</button>
+            </form>
+
+            <span class="errorWarningLogin">{{alreadyRegistered}}</span>
+            <span class="registerOK">{{thanksForRegistering}}</span>
+            <br />
+        </div>
+    </div>
+</div>

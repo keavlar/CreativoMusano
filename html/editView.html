@@ -1,0 +1,48 @@
+﻿<div class=container-fluid>
+    <div class="row">
+        <div class="col-xs- col-sm-12 col-md-12 col-lg-12">
+
+            <h2>Edit your item details</h2>
+
+            <form name="editVideoDetails">
+                <div class="form-group">
+                    <label for="updatedVideoTitle">Enter a new tilte</label>
+                    <input type="text" class="form-control" id="updatedVideoTitle" placeholder="{{titleToEdit}}" ng-model="titleToEdit" required>
+                </div>
+                <div class="form-group">
+                    <label for="updatedVideoCategory">Enter a new category</label>
+                    <select class="form-control" id="updatedVideoCategory" ng-model="categoryToEdit" required>
+                        <option value="Film & Animation">Film & Animation</option>
+                        <option value="Cars & Vehicles">Cars & Vehicles</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Film">Film</option>
+                        <option value="Travel & Events">Travel & Events</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="People & Blogs">People & Blogs</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="News & Politics">News & Politics</option>
+                        <option value="Pets & Animals">Pets & Animals</option>
+                        <option value="How-to & Style">How-to & Style</option>
+                        <option value="Education">Education</option>
+                    </select>
+                   
+                </div>
+                <div class="form-group">
+                    <label for="updatedVideoDescription">Enter a new description</label>
+                    <input type="text" class="form-control" id="updatedVideoDescription" placeholder="{{descriptionToEdit}}" ng-model="descriptionToEdit" required>
+                </div>
+                <div class="form-group">
+                    <label for="updatedVideoLink">Enter a new Youtube link</label>
+                    <input type="text" class="form-control" id="updatedVideoLink" placeholder="{{linkToEdit}}" ng-model="linkToEdit" required>
+                    <span class="youtubeUrlValid">{{youtubeUrlInvalid}}</span>
+                </div>
+                <button type="button" class="btn btn-danger" ng-click="updateDetails()" value="updateVideoDetails" ng-disabled="editVideoDetails.$invalid"><span class="glyphicon glyphicon-cog"></span> Update!</button> <span class="updatedTrue">{{updateSuccess}}</span>
+            </form>
+
+            <br />
+
+            <button type="button" class="btn btn-danger" ng-click="backToPlaylist()"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+        </div>
+    </div>
+</div>
